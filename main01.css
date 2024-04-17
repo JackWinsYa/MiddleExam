@@ -1,0 +1,709 @@
+body, html {
+    font-family:Microsoft Yahei;
+    height: 4000px; /* 網頁的總高度 */
+    margin: 0;
+    padding: 0;
+    background-color: #2c3e50; /* 背景顏色設定為暗色，如圖片所示 */
+  }
+  
+  .container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;  
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 250px; /* 頂部的空間 */
+  }
+
+  .feng-container {
+    position: relative;
+    
+}
+
+.feng-image {
+    width: 454px;
+    z-index: 3;
+    margin-right: -985px;
+    margin-top: -255px;
+}
+
+.circle-overlay {
+    position: absolute;
+    top: -200px; /* 距離網頁頂部的距離 */
+    right: -800px; /* 距離網頁右側的距離 */
+    width: 300px; /* 圓圈的直徑 */
+    height: 300px; /* 圓圈的直徑 */
+    border-radius: 50%; /* 製作圓形 */
+    border: 5px solid white; /* 圓圈的邊框樣式 */
+    z-index: 2; /* 確保圓圈在圖片之上 */
+    animation: glow 3s infinite alternate
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 20px red, 0 0 40px transparent, 0 0 60px transparent, 0 0 80px transparent, 0 0 100px transparent, 0 0 120px transparent, 0 0 140px transparent;
+    }
+    14.28% {
+        box-shadow: 0 0 20px transparent, 0 0 40px orange, 0 0 60px transparent, 0 0 80px transparent, 0 0 100px transparent, 0 0 120px transparent, 0 0 140px transparent;
+    }
+    28.57% {
+        box-shadow: 0 0 20px transparent, 0 0 40px transparent, 0 0 60px yellow, 0 0 80px transparent, 0 0 100px transparent, 0 0 120px transparent, 0 0 140px transparent;
+    }
+    42.85% {
+        box-shadow: 0 0 20px transparent, 0 0 40px transparent, 0 0 60px transparent, 0 0 80px green, 0 0 100px transparent, 0 0 120px transparent, 0 0 140px transparent;
+    }
+    57.14% {
+        box-shadow: 0 0 20px transparent, 0 0 40px transparent, 0 0 60px transparent, 0 0 80px transparent, 0 0 100px blue, 0 0 120px transparent, 0 0 140px transparent;
+    }
+    71.42% {
+        box-shadow: 0 0 20px transparent, 0 0 40px transparent, 0 0 60px transparent, 0 0 80px transparent, 0 0 100px transparent, 0 0 120px indigo, 0 0 140px transparent;
+    }
+    85.71% {
+        box-shadow: 0 0 20px transparent, 0 0 40px transparent, 0 0 60px transparent, 0 0 80px transparent, 0 0 100px transparent, 0 0 120px transparent, 0 0 140px purple;
+    }
+    100% {
+        box-shadow: 0 0 20px red, 0 0 40px transparent, 0 0 60px transparent, 0 0 80px transparent, 0 0 100px transparent, 0 0 120px transparent, 0 0 140px transparent;
+    }
+}
+
+@keyframes wave {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.wave {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    animation: pulse 3s infinite linear;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0);
+        opacity: 0.5;
+    }
+    50% {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(3);
+        opacity: 0;
+    }
+}
+
+.sound-waves {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, red, orange, yellow, green, blue, indigo, violet);
+    opacity: 0.5;
+    animation: sound-wave 2s infinite;
+    z-index: 1;
+    pointer-events: none; /* 防止音波元素干扰页面交互 */
+    display: none; /* 初始状态下隐藏音波元素 */
+}
+
+@keyframes sound-wave {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.5); }
+    100% { transform: scale(1); }
+}
+
+#toggle-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+  .Name {
+    text-align: center; 
+    margin-top: 10px; /* 文本与图像之间的间距 */
+    font-size: 36px; /* 文本大小 */
+    font-weight: bolder; /* 文本加粗 */
+}
+
+  .Name.En {
+    margin-top: -30px;
+  }
+
+  .birthday-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0px; /* 与姓名之间的间距 */
+}
+
+.birthday-info img {
+    width: 45px;
+    height: 45px;
+    margin-right: 10px;
+}
+
+.birthday-info .pisces {
+    margin-left: 10px; /* 調整圖標與文本之間的水平間距 */
+    width: 45px;
+    height: 45px;
+}
+
+.birthday-info span {
+    font-weight: bolder;
+    font-size: 28px;
+
+}
+
+.address-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.address-info img {
+    width: 45px;
+    height: 45px;
+    margin-right: 10px;
+}
+
+.address-info span {
+    font-weight: bolder;
+    font-size: 28px;
+    margin-right: 55px;
+}
+
+.study-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.study-info img {
+    width: 45px;
+    height: 45px;
+    margin-right: 10px;
+}
+
+.study-info span {
+    font-weight: bolder;
+    font-size: 28px;
+    margin-right: 0px;
+}
+
+
+
+  .top-message, .hover-message {
+    font-weight: bolder;
+    position: absolute;
+    top: 50px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    background-color: white;
+    border-radius: 15px; 
+    padding: 10px 20px; 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
+    color: #333; 
+    font-size: 36px; 
+    z-index: 10; 
+    white-space: nowrap; 
+    max-width: calc(100% - 40px); 
+    box-sizing: border-box; 
+    opacity: 1;
+}
+
+.hover-message {
+    opacity: 0; 
+    pointer-events: none; 
+}
+
+.magnify-icon {
+    margin-left: 10px; 
+    vertical-align: middle;    
+}
+
+.feng-image {
+    top: -40px;
+    position: absolute;
+    right: 100px;
+    width: 454px;   
+    z-index: 3;
+}   
+
+  .cat-image {
+    top: -40px;
+    position: absolute;
+    left: 100px;
+    width: 454px;   
+    z-index: 3; /* 确保图片在最上面，数值大于彩虹线条的z-index */
+}
+  
+  .container::before {
+    content: ''; /* 伪元素需要内容来显示 */
+    display: block; /* 将伪元素作为块级元素 */
+    position: absolute; /* 使用绝对定位 */
+    top: 400px; /* 将线条放置在照片下方，这里的值需要根据照片的实际位置进行调整 */
+    left: 50%; /* 从卡片中心开始绘制线条 */
+    transform: translateX(-50%); /* 使用transform来确保线条居中 */
+    width: 100%; /* 伪元素宽度为容器的100% */
+    height: 70px; /* 线条的高度，可以根据需要调整 */
+    background-color: #ccc; /* 线条的颜色，可以根据需要调整 */
+    z-index: 0; /* 设置合适的层叠顺序，确保不会覆盖照片 */
+  }
+
+  .left-buttons {
+    position: absolute; /* 绝对定位 */
+    top: 400px; /* 根据横线实际位置调整 */
+    left: 100px;
+    width: 454px; /* 左侧空间宽度 */
+    height: 70px; /* 根据需要调整高度 */
+    display: flex;
+    justify-content: space-between; /* 按钮之间平均分配空间 */
+    align-items: center;
+  }
+
+  .right-buttons {
+    position: absolute; /* 绝对定位 */
+    top: 400px; /* 根据横线实际位置调整，保持与左侧按钮相同 */
+    right: 100px; /* 将按钮容器向左移动50px */
+    width: 454px; /* 右侧空间宽度，确保与左侧容器一致 */
+    height: 70px; /* 根据需要调整高度，确保与左侧容器一致 */
+    display: flex;
+    justify-content: space-between; /* 按钮之间平均分配空间 */
+    align-items: center;
+  }
+  
+  .menu-button {        
+    font-weight: bold   ;
+    font-size: 30px;
+    border: 2px solid #ccc;
+    padding: 10px 20px; /* 按钮内边距 */
+    background-color: 	#7B7B7B; /* 按钮背景颜色 */
+    color: black; /* 文字颜色 */
+    text-decoration: none; /* 去掉下划线 */
+    border-radius: 5px; /* 按钮圆角 */
+    transition: background-color 0.3s; /* 背景颜色变化的过渡效果 */
+    z-index: 1000;
+  }
+  
+  .menu-button:hover {
+    background-color: #2980b9; /* 鼠标悬停时按钮的背景颜色变化 */
+  }
+
+  .photo-frame {
+    width: 400px; /* 照片框的寬度 */
+    height: calc(100% - 50px); /* 高度計算為總高度減去（頂部空間+底部空間） */
+    background-color: white;
+    border-radius: 100px; /* 創建類似圓柱側邊的邊框 */
+    overflow: hidden;
+    position: relative;
+    padding: 20px; /* 照片周圍的內邊距 */
+    margin-top: 0px;
+    top: -100px;
+  }
+  
+  .photo-frame img {
+    border-radius: 50%; /* 將圖片變為圓形 */
+    max-width: 100%; /* 確保圖片不會從框架溢出 */
+    max-height: 100%;
+  }
+
+  .contact-box {
+    width: 500px; /* 设置框的宽度 */
+    height: 350px;
+    padding: 20px; /* 设置内边距 */
+    background-color: #f8f9fa; /* 设置背景颜色 */
+    border-radius: 10px; /* 设置圆角 */
+    position: absolute;
+    top: 500px; /* 相对于父容器定位 */
+    left: 80px; /* 距离左边界 100px */
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+    
+}
+
+.contact-box h2 {
+    font-size: 24px;
+    margin-bottom: 10px; /* 设置标题与内容之间的间距 */
+}
+
+.contact-box p {
+    font-size: 18px;
+    margin-bottom: 8px; /* 设置内容之间的间距 */
+}
+
+.skill-box {
+    width: 500px; /* 设置框的宽度 */
+    height: 500px;
+    padding: 20px; /* 设置内边距 */
+    background-color: #f8f9fa; /* 设置背景颜色 */
+    border-radius: 10px; /* 设置圆角 */
+    position: absolute;
+    top: 1000px; /* 相对于父容器定位 */
+    left: 80px; /* 距离左边界 100px */
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+}
+
+.skill-box h2 { 
+    margin-left: -60px;
+}
+
+.skill-program-box {
+    width: 500px; /* 设置框的宽度 */
+    height: 500px;
+    padding: 20px; /* 设置内边距 */
+    background-color: #f8f9fa; /* 设置背景颜色 */
+    border-radius: 10px; /* 设置圆角 */
+    position: absolute;
+    top: 1000px; /* 相对于父容器定位 */
+    right: 80px; /* 距离左边界 100px */
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+}
+
+.skill-program-box h2 {
+    margin-left: 180px;
+}
+
+.about-box {
+    width: 500px; /* 设置框的宽度 */
+    height: 350px;
+    padding: 20px; /* 设置内边距 */
+    background-color: #f8f9fa; /* 设置背景颜色 */
+    border-radius: 10px; /* 设置圆角 */
+    position: absolute;
+    top: 500px; /* 相对于父容器定位 */
+    right: 80px; /* 距离左边界 100px */
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+}
+
+.about-box h2 {
+    font-size: 24px;
+    margin-bottom: 10px; /* 设置标题与内容之间的间距 */
+    margin-right: -40px;
+}
+
+.about-box p {
+    font-size: 18px;
+    margin-bottom: -10px; /* 设置内容之间的间距 */
+    margin-right: 10px; 
+    overflow-wrap: break-word;  /* 确保长单词或连续字符在到达容器边缘时自动换行 */
+    text-align: left;
+    line-height: 1.6;
+}
+
+.phone-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.phone-info img {
+    width: 45px;
+    height: 45px;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+
+.phone-info span {
+    font-size: 28px;
+    margin-right: 200px;
+    margin-top: 20px;
+}
+  
+.email-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.email-info img {
+    width: 45px;
+    height: 45px;
+    margin-right: 10px;
+    margin-top: 0px;
+}
+
+.email-info span {
+    font-size: 28px;
+    margin-right: 90px;
+    margin-top: 0px;
+}
+
+.social-links {
+    text-align: center; /* 将链接居中对齐 */
+    position: relative;
+    margin-top: 20px;
+}
+
+.social-links a {
+    margin-top: -20px;
+    display: inline-block;
+    margin: 0 20px; /* 调整图标之间的左右间距 */
+    position: relative; /* 将链接设置为相对定位 */
+}
+
+.social-links a span {
+    font-weight: bolder;
+    font-size: 20px;
+    position: absolute;
+    bottom: -20px; /* 调整文本与图标之间的垂直距离 */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.text-box {
+    position: relative; /* 使用相对定位 */
+    top: 100px;
+    width: calc(100% - 40px ); /* 根据你的布局需要，调整宽度 */    
+    margin: 20px; /* 上下也各留白20px，可根據需要調整 */
+    padding: 10px;
+    background-color: #2c3e50; /* 背景颜色 */   
+    text-align: center; /* 文本居中 */  
+    color: #ffffff; /* 文字颜色，这里使用白色 */
+    font-family: '微軟正黑體', Arial, sans-serif; /* 字体样式 */
+    box-sizing: border-box; /* 确保内边距不影响整体宽度 */
+}
+
+.text-box p {
+    margin: 0; /* 移除段落默认外边距 */
+    line-height: 1.6; /* 行间距 */      
+}
+
+.skill-box {
+    width: 500px;
+    /* 根据需要添加其他样式 */
+}
+
+.skill {
+    margin-bottom: 40px;
+}
+
+.skill-name {
+    font-size: 16px;
+    /* 根据需要添加其他样式 */
+}
+
+.skill-bar {
+    width: 100%;
+    background-color: #ddd;
+    /* 根据需要添加其他样式 */
+}
+
+.skill-percentage {
+    background-color: #4CAF50;
+    color: white;
+    text-align: right;
+    padding-right: 5px;
+    line-height: 20px; /* 高度应与.skill-bar相同 */
+    width: 0%; /* 初始宽度为0，随后通过JS动态增加 */
+    transition: width 2s; /* 过渡动画效果 */
+}
+
+.doughnut-chart-row {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px; /* 调整行与行之间的间距 */
+}
+
+.doughnut-chart-row canvas {
+    width: 45%; /* 每个图表占行宽度的45% */
+}
+
+.chart-container {
+    position: relative;
+    width: 200px; /* 調整容器寬度 */
+    height: 200px; /* 調整容器高度 */
+}
+
+.chart-label {
+    font-weight: bolder;    
+    position: absolute;
+    top: -285px;
+    left: 125px;
+    transform: translate(-50%, -50%);
+    font-size: 18px; /* 調整字體大小 */
+    color: black; /* 調整字體顏色 */
+}
+
+.chart-label1 {
+    font-weight: bolder;
+    width: 100%;
+    position: absolute;
+    top: -485px;
+    left: 375px;
+    transform: translate(-50%, -50%);
+    font-size: 18px; /* 調整字體大小 */
+    color: black; /* 調整字體顏色 */
+}
+
+.chart-label2  {
+    font-weight: bolder;
+    width: 100%;
+    position: absolute;
+    top: -485px;
+    left: 125px;
+    transform: translate(-50%, -50%);
+    font-size: 18px; /* 調整字體大小 */
+    color: black; /* 調整字體顏色 */
+}
+
+.chart-label3  {
+    font-weight: bolder;
+    width: 100%;
+    position: absolute;
+    top: -685px;
+    left: 375px;
+    transform: translate(-50%, -50%);
+    font-size: 18px; /* 調整字體大小 */
+    color: black; /* 調整字體顏色 */
+}
+
+.education-box {
+    width: 500px; /* 设置框的宽度 */
+    height: 80px;
+    padding: 20px; /* 设置内边距 */
+    background-color: #f8f9fa; /* 设置背景颜色 */
+    border-radius: 10px; /* 设置圆角 */
+    position: absolute;
+    top: 1700px; /* 相对于父容器定位 */
+    left: 80px; /* 距离左边界 100px */
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+}
+
+.education-box h2 { 
+    font-size: 24px;
+    margin-bottom: 10px; /* 设置标题与内容之间的间距 */
+    margin-right: -300px;
+}
+
+
+.timeline-container {
+    position: absolute;
+    top: 150px; /* 根据实际情况调整 */
+    left: -40px;
+    height: 800px;
+    width: 100px;
+}
+
+.timeline {
+    position: relative;
+    width: 20px;
+    height: 100%;
+    background-color: #d8d8d8;
+    border-radius: 10px;
+    margin: 0 auto; /* 水平居中 */
+}
+
+.event {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #f8b26a;
+}
+
+/* 更新百分比定位以确保平均分布 */
+.event:nth-child(1) { top: 0%; }
+.event:nth-child(2) { top: 33.33%; }
+.event:nth-child(3) { top: 66.67%; }
+.event:nth-child(4) { top: calc(100% - 20px); /* 使用 calc() 考虑圆点自身的高度 */ }
+
+.event-label {
+    font-size: 25px;
+    position: absolute;
+    left: 30px; /* 调整标签距离事件的距离 */
+    top: 50%; /* 将标签垂直居中 */
+    transform: translateY(-50%);
+    z-index: 3; /* 确保标签在最上层 */
+    width: 50px ;
+    background-color: #fff; /* 白色背景 */
+    padding: 5px 10px; /* 添加内边距 */
+    border-radius: 5px; /* 圆角 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+    cursor: pointer; /* 将鼠标指针设置为手型 */
+    transition: color 0.3s, background-color 0.3s; /* 添加过渡效果 */
+}
+
+.event-label:hover {
+    color: #fff; /* 悬停时改变文字颜色 */
+    background-color: #007bff; /* 悬停时改变背景颜色 */
+  }
+
+  .education-text-box {
+    width: 350px; /* 设置框的宽度 */
+    height: 450px;
+    padding: 20px; /* 设置内边距 */
+    background-color: #f8f9fa; /* 设置背景颜色 */
+    border-radius: 10px; /* 设置圆角 */
+    position: absolute;
+    top: 500px; /* 相对于父容器定位 */
+    left: 150px; /* 距离左边界 100px */
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+    z-index: 2;
+}
+
+.education-img-box {
+    width: 250px; /* 设置框的宽度 */
+    height: 250px;
+    padding: 20px; /* 设置内边距 */
+    background-color: gray; /* 设置背景颜色 */
+    border-radius: 99em; /* 设置圆角 */
+    position: absolute;
+    top: 180px; /* 相对于父容器定位 */
+    left: 200px; /* 距离左边界 100px */
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+    z-index: 3;
+}
+
+#education-text {
+    font-size: 35px;
+    margin-top: 100px; /* 将文本向下移动 200px */
+    z-index: 299;
+}
+
+.education-js-box {
+    width: 350px; /* 设置框的宽度 */
+    height: 450px;
+    padding: 20px; /* 设置内边距 */
+    background-color: white; /* 设置背景颜色 */
+    border-radius: 10px; /* 设置圆角 */
+    position: absolute;
+    top: 500px; /* 相对于父容器定位 */
+    left: 150px; /* 距离左边界 100px */
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+}
+
+#education-js-box {
+    text-align: left; /* 將文字置左 */
+    font-size: 25px; /* 加大文字大小 */
+}
