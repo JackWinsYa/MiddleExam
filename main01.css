@@ -1096,7 +1096,7 @@ body, html {
   
   .prev {
     left: -120px;   
-    z-index: ;
+  
   }
   
   .next {
@@ -1133,4 +1133,22 @@ body, html {
     background-color: #fff;
     border-radius: 50%;
     cursor: pointer;
+}
+
+#scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    border: none;
+    background: none;
+    cursor: pointer;
+    border-radius: 99em;
+}
+
+#scrollToTopBtn img {
+    width: 50px; /* 調整圖片大小 */
+    height: 50px; /* 調整圖片大小 */
+    border-radius: 99em;
 }
