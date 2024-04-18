@@ -1,6 +1,6 @@
 body, html {
     font-family:Microsoft Yahei;
-    height: 4000px; /* 網頁的總高度 */
+    height: 3000px; /* 網頁的總高度 */
     margin: 0;
     padding: 0;
     background-color: #2c3e50; /* 背景顏色設定為暗色，如圖片所示 */
@@ -31,7 +31,7 @@ body, html {
 
 .circle-overlay {
     position: absolute;
-    top: -200px; /* 距離網頁頂部的距離 */
+    top: -250px; /* 距離網頁頂部的距離 */
     right: -800px; /* 距離網頁右側的距離 */
     width: 300px; /* 圓圈的直徑 */
     height: 300px; /* 圓圈的直徑 */
@@ -242,7 +242,7 @@ body, html {
 }
 
 .feng-image {
-    top: -40px;
+    top: -100px;
     position: absolute;
     right: 100px;
     width: 454px;   
@@ -311,20 +311,21 @@ body, html {
 
   .photo-frame {
     width: 400px; /* 照片框的寬度 */
-    height: calc(100% - 50px); /* 高度計算為總高度減去（頂部空間+底部空間） */
+    height: calc(100% - 500px); /* 高度計算為總高度減去（頂部空間+底部空間） */
     background-color: white;
     border-radius: 100px; /* 創建類似圓柱側邊的邊框 */
     overflow: hidden;
     position: relative;
     padding: 20px; /* 照片周圍的內邊距 */
     margin-top: 0px;
-    top: -100px;
+    top: -120px;
   }
   
   .photo-frame img {
-    border-radius: 50%; /* 將圖片變為圓形 */
-    max-width: 100%; /* 確保圖片不會從框架溢出 */
-    max-height: 100%;
+    border-radius: 10%; /* 將圖片變為圓形 */
+    max-width: 80%; /* 確保圖片不會從框架溢出 */
+    max-height: 80%;
+    
   }
 
   .contact-box {
@@ -491,6 +492,234 @@ body, html {
 .text-box p {
     margin: 0; /* 移除段落默认外边距 */
     line-height: 1.6; /* 行间距 */      
+}
+
+.text-box01 {
+    position: relative; /* 使用相对定位 */
+    top: 120px;
+    width: calc(100% - 80px ); /* 根据你的布局需要，调整宽度 */    
+    margin: 20px; /* 上下也各留白20px，可根據需要調整 */
+    padding: 10px;
+    background-color: #2c3e50; /* 背景颜色 */   
+    text-align: center; /* 文本居中 */  
+    color: #ffffff; /* 文字颜色，这里使用白色 */
+    font-family: '微軟正黑體', Arial, sans-serif; /* 字体样式 */
+    box-sizing: border-box; /* 确保内边距不影响整体宽度 */
+    left: 20px;
+}
+
+.text-box01 p {
+    margin: 0; /* 移除段落默认外边距 */
+    line-height: 1.6; /* 行间距 */      
+}
+
+.text-box-text01 {
+    font-weight: bolder;
+    display: flex; /* 启用 flexbox 布局 */
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+    height: 100px; /* 可以根据需要调整高度 */
+    font-size: 16px; /* 字体大小，根据需要调整 */
+    text-align: center; /* 确保文本在其容器中居中 */
+    margin: 20px 0; /* 上下间距，根据需要调整 */
+    margin-top: 140px;
+}
+
+.text-box02 {
+    position: relative; /* 使用相对定位 */
+    top: -60px;
+    width: calc(100% - 80px ); /* 根据你的布局需要，调整宽度 */    
+    margin: 20px; /* 上下也各留白20px，可根據需要調整 */
+    padding: 10px;
+    background-color: #2c3e50; /* 背景颜色 */   
+    text-align: center; /* 文本居中 */  
+    color: #ffffff; /* 文字颜色，这里使用白色 */
+    font-family: '微軟正黑體', Arial, sans-serif; /* 字体样式 */
+    box-sizing: border-box; /* 确保内边距不影响整体宽度 */
+    left: 20px;
+}
+
+.text-box02 p {
+    margin: 0; /* 移除段落默认外边距 */
+    line-height: 1.6; /* 行间距 */      
+}
+
+.text-box-text02 {
+    font-weight: bolder;
+    display: flex; /* 启用 flexbox 布局 */
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+    height: 100px; /* 可以根据需要调整高度 */
+    font-size: 16px; /* 字体大小，根据需要调整 */
+    text-align: center; /* 确保文本在其容器中居中 */
+    margin: 20px 0; /* 上下间距，根据需要调整 */
+    margin-top: -40px;
+}
+
+.text-box03 {
+    position: relative; /* 使用相对定位 */
+    top: -60px;
+    width: calc(100% - 80px ); /* 根据你的布局需要，调整宽度 */    
+    margin: 20px; /* 上下也各留白20px，可根據需要調整 */
+    padding: 10px;
+    background-color: #2c3e50; /* 背景颜色 */   
+    text-align: center; /* 文本居中 */  
+    color: #ffffff; /* 文字颜色，这里使用白色 */
+    font-family: '微軟正黑體', Arial, sans-serif; /* 字体样式 */
+    box-sizing: border-box; /* 确保内边距不影响整体宽度 */
+    left: 20px;
+}
+
+.text-box03 p {
+    margin: 0; /* 移除段落默认外边距 */
+    line-height: 1.6; /* 行间距 */      
+}
+
+.text-box-text03 {
+    font-weight: bolder;
+    display: flex; /* 启用 flexbox 布局 */
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+    height: 100px; /* 可以根据需要调整高度 */
+    font-size: 16px; /* 字体大小，根据需要调整 */
+    text-align: center; /* 确保文本在其容器中居中 */
+    margin: 20px 0; /* 上下间距，根据需要调整 */
+    margin-top: -40px;
+}
+
+.text-box04 {
+    position: relative; /* 使用相对定位 */
+    top: -60px;
+    width: calc(100% - 80px ); /* 根据你的布局需要，调整宽度 */    
+    margin: 20px; /* 上下也各留白20px，可根據需要調整 */
+    padding: 10px;
+    background-color: #2c3e50; /* 背景颜色 */   
+    text-align: center; /* 文本居中 */  
+    color: #ffffff; /* 文字颜色，这里使用白色 */
+    font-family: '微軟正黑體', Arial, sans-serif; /* 字体样式 */
+    box-sizing: border-box; /* 确保内边距不影响整体宽度 */
+    left: 20px;
+}
+
+.text-box04 p {
+    margin: 0; /* 移除段落默认外边距 */
+    line-height: 1.6; /* 行间距 */      
+}
+
+.text-box-text04 {
+    font-weight: bolder;
+    display: flex; /* 启用 flexbox 布局 */
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+    height: 100px; /* 可以根据需要调整高度 */
+    font-size: 16px; /* 字体大小，根据需要调整 */
+    text-align: center; /* 确保文本在其容器中居中 */
+    margin: 20px 0; /* 上下间距，根据需要调整 */
+    margin-top: -40px;
+}
+
+.text-box05 {
+    position: relative; /* 使用相对定位 */
+    top: -60px;
+    width: calc(100% - 80px ); /* 根据你的布局需要，调整宽度 */    
+    margin: 20px; /* 上下也各留白20px，可根據需要調整 */
+    padding: 10px;
+    background-color: #2c3e50; /* 背景颜色 */   
+    text-align: center; /* 文本居中 */  
+    color: #ffffff; /* 文字颜色，这里使用白色 */
+    font-family: '微軟正黑體', Arial, sans-serif; /* 字体样式 */
+    box-sizing: border-box; /* 确保内边距不影响整体宽度 */
+    left: 20px;
+}
+
+.text-box05 p {
+    margin: 0; /* 移除段落默认外边距 */
+    line-height: 1.6; /* 行间距 */      
+}
+
+.text-box-text05 {
+    font-weight: bolder;
+    display: flex; /* 启用 flexbox 布局 */
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+    height: 100px; /* 可以根据需要调整高度 */
+    font-size: 16px; /* 字体大小，根据需要调整 */
+    text-align: center; /* 确保文本在其容器中居中 */
+    margin: 20px 0; /* 上下间距，根据需要调整 */
+    margin-top: -40px;
+}
+
+.magnifier-container {
+    position: relative;
+    cursor: default;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    top: -60px;
+}
+
+.magnifier-icon {
+    font-size: 2em;
+    
+}
+
+.tooltip:hover {
+    border: 1px solid red;
+}
+
+.magnifier-container:hover .tooltip {
+    display: block;
+}
+
+.tooltip {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    padding: 10px;
+    z-index: 999; /* 確保提示框處於最上層 */
+    display: none; /* 預設隱藏提示框 */
+    text-align: center; /* 文字居中 */
+    width: 300px;
+}
+
+.tooltip-image {
+    max-width: 100%; /* 調整圖片大小 */
+    height: auto;
+}
+
+.gif-container {
+    border-radius: 10px; /* 調整圓角大小 */
+    overflow: hidden; /* 確保圓角外觀 */
+}
+
+.button-container {
+    display: flex;
+    justify-content: center; /* 水平置中 */
+    align-items: center; /* 垂直置中 */
+    margin-top: 20px; /* 調整按鈕與 GIF 之間的距離 */
+}
+
+.button1 {
+    background-color: #4CAF50; /* 背景顏色 */
+    border: none; /* 移除邊框 */
+    color: white; /* 文字顏色 */
+    padding: 10px 20px; /* 內邊距 */
+    text-align: center; /* 文字居中 */
+    text-decoration: none; /* 移除下劃線 */
+    display: inline-block; /* 使按鈕以行內塊元素顯示 */
+    font-size: 16px; /* 字體大小 */
+    cursor: pointer; /* 鼠標樣式 */
+    border-radius: 5px; /* 圓角 */
+    transition: background-color 0.3s; /* 添加過渡效果 */
+}
+
+/* 按鈕懸停樣式 */
+.button1:hover {
+    background-color: #45a049; /* 懸停時的背景顏色 */
 }
 
 .skill-box {
@@ -685,7 +914,7 @@ body, html {
 }
 
 #education-text {
-    font-size: 35px;
+    font-size: 30px;
     margin-top: 100px; /* 将文本向下移动 200px */
     z-index: 299;
 }
@@ -706,4 +935,202 @@ body, html {
 #education-js-box {
     text-align: left; /* 將文字置左 */
     font-size: 25px; /* 加大文字大小 */
+}
+
+.exp-box {
+    width: 500px; /* 设置框的宽度 */
+    height: 80px;
+    padding: 20px; /* 设置内边距 */
+    background-color: #f8f9fa; /* 设置背景颜色 */
+    border-radius: 10px; /* 设置圆角 */
+    position: absolute;
+    top: 1700px; /* 相对于父容器定位 */
+    right: 80px; /* 距离左边界 100px */
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+}
+
+.exp-box h2 { 
+    font-size: 24px;
+    margin-bottom: 10px; /* 设置标题与内容之间的间距 */
+    margin-right: -300px;
+}
+
+
+.timeline-container01 {
+    position: absolute;
+    top: 150px; /* 根据实际情况调整 */
+    right: -40px;
+    height: 800px;
+    width: 100px;
+}
+
+.timeline01 {
+    position: relative;
+    width: 20px;
+    height: 100%;
+    background-color: #d8d8d8;
+    border-radius: 10px;
+    margin: 0 auto; /* 水平居中 */
+}
+
+.exp-event {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #f8b26a;
+}
+
+/* 更新百分比定位以确保平均分布 */
+.exp-event:nth-child(1) { top: 0%; }
+.exp-event:nth-child(2) { top: 33.33%; }
+.exp-event:nth-child(3) { top: 66.67%; }
+.exp-event:nth-child(4) { top: calc(100% - 20px); /* 使用 calc() 考虑圆点自身的高度 */ }
+
+.exp-event-label {
+    font-size: 25px;
+    position: absolute;
+    left: -130px; /* 调整标签距离事件的距离 */
+    top: 50%; /* 将标签垂直居中 */
+    transform: translateY(-50%);
+    z-index: 3; /* 确保标签在最上层 */
+    width: 100px ;
+    background-color: #fff; /* 白色背景 */
+    padding: 5px 10px; /* 添加内边距 */
+    border-radius: 5px; /* 圆角 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+    cursor: pointer; /* 将鼠标指针设置为手型 */
+    transition: color 0.3s, background-color 0.3s; /* 添加过渡效果 */
+}
+
+.exp-event-label:hover {
+    color: #fff; /* 悬停时改变文字颜色 */
+    background-color: #007bff; /* 悬停时改变背景颜色 */
+  }
+
+  .exp-text-box {
+    width: 350px; /* 设置框的宽度 */
+    height: 450px;
+    padding: 20px; /* 设置内边距 */
+    background-color: #f8f9fa; /* 设置背景颜色 */
+    border-radius: 10px; /* 设置圆角 */
+    position: absolute;
+    top: 500px; /* 相对于父容器定位 */
+    right: 150px; /* 距离左边界 100px */
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+    z-index: 2;
+}
+
+.exp-img-box {
+    width: 250px; /* 设置框的宽度 */
+    height: 250px;
+    padding: 20px; /* 设置内边距 */
+    background-color: gray; /* 设置背景颜色 */
+    border-radius: 99em; /* 设置圆角 */
+    position: absolute;
+    top: 180px; /* 相对于父容器定位 */
+    right: 200px; /* 距离左边界 100px */
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+    z-index: 3;
+}
+
+#exp-text {
+    font-size: 30px;
+    margin-top: 100px; /* 将文本向下移动 200px */
+    z-index: 299;
+}
+
+.exp-js-box {
+    width: 350px; /* 设置框的宽度 */
+    height: 450px;
+    padding: 20px; /* 设置内边距 */
+    background-color: white; /* 设置背景颜色 */
+    border-radius: 10px; /* 设置圆角 */
+    position: absolute;
+    top: 500px; /* 相对于父容器定位 */
+    right: 150px; /* 距离左边界 100px */
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+}
+
+#exp-js-box {
+    text-align: left; /* 將文字置左 */
+    font-size: 25px; /* 加大文字大小 */
+}
+
+.carousel {
+    position: relative;
+    width: 600px;
+    overflow: visible;
+    
+    top: -50px; /* 往上移动50px */
+    right: -80px;
+  }
+  
+  .carousel-item {
+    width: 450px;
+    height: 450px;
+    display: none;
+    border-radius: 10px;
+  }
+  
+  .carousel-item.active {
+    display: block;
+  }
+  
+  .carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: beige;
+    color: black;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .prev {
+    left: -120px;   
+    z-index: ;
+  }
+  
+  .next {
+    right: 10px;
+  }
+
+  .carousel-indicators {
+    display: flex;
+    justify-content: center;
+    margin-top: -80px;
+    z-index: 10000;
+    overflow: visible; 
+}
+
+.indicator {
+    width: 30px;
+    height: 5px;
+    background-color: #666; /* 默认为灰色 */
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    z-index: 10000;
+}
+
+.indicator.active {
+    background-color: #000; /* 活动状态为黑色 */
+}
+
+.carousel-indicators li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background-color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
 }

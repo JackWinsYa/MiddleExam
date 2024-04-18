@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>王盛峰個人履歷</title>
-    <link rel="stylesheet" href="main01.css">
+    <link rel="stylesheet" href="main01.css"> <!-- 你的个人样式 -->
+    
     <link rel="icon" href="img/pisces-title.png" type="image/png"/>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
@@ -23,7 +24,7 @@
         
         <img src="img/02.png" alt="Cute Cat" class="cat-image">
         <section class="photo-frame">
-            <img src="img/test.jpg" alt="個人照片" >
+            <img src="img/me1.jpg" alt="個人照片" style="transform: translateX(40px);" >
             <p class="Name">王盛峰</p>
             <p class="Name En">Wang Sheng-Feng</p>
             <div class="birthday-info">
@@ -39,8 +40,85 @@
                 <img src="img/knowledge.png" alt="學歷">
                 <span>中原大學‧資訊管理</span>
             </div>
-            <div class="text-box">
+            <div class="text-box" id="interests">
                 <span style="font-size: 28px;">TITLE</span>
+            </div>
+            <div class="text-box01">
+                <span style="font-size: 20px;">PROGRAMER</span>
+            </div>
+            <div class="text-box-text01">
+                <span style="letter-spacing:2px">很喜歡製作網站等等。<br>
+                    因為對製作有美感的事物很有興趣</span>
+            </div>
+            <div class="magnifier-container">
+                <span class="magnifier-icon">🔍</span>
+                <div class="tooltip" style="display: none;">
+                    <img src="img/it04.jpg" alt="Preview Image" class="tooltip-image">
+                </div>
+            </div>
+            <div class="text-box02">
+                <span style="font-size: 20px;">CATKEEPER</span>
+            </div>
+            <div class="text-box-text02">
+                <span style="letter-spacing:2px">超級大貓奴！！！！<br>
+                    在家裡也有養了兩隻可愛的貓咪，<BR>橘色的叫橘子，黑白叫柚子</span>
+            </div>
+            <div class="magnifier-container">
+                <span class="magnifier-icon">🔍</span>
+                <div class="tooltip" style="display: none;">
+                    <img src="img/it01.jpg" alt="Preview Image1" class="tooltip-image1">
+                </div>
+            </div>
+            <div class="text-box03">
+                <span style="font-size: 20px;">SPORTSMAN</span>
+            </div>
+            <div class="text-box-text03">
+                <span style="letter-spacing:2px">喜歡運動，在下課最想做的事情<br>
+                    就是去健身房或者去游泳！</span>
+            </div>
+            <div class="magnifier-container">
+                <span class="magnifier-icon">🔍</span>
+                <div class="tooltip" style="display: none;">
+                    <img src="img/it02.jpg" alt="Preview Image3" class="tooltip-image3">
+                </div>
+            </div>
+            <div class="text-box04">
+                <span style="font-size: 20px;">GAMER</span>
+            </div>
+            <div class="text-box-text04">
+                <span style="letter-spacing:2px">非常喜歡玩遊戲！是一個大宅男<br>
+                喜歡的類型是家機遊戲，並且是單人<br>
+                尤其喜歡了解遊戲的背景故事<br>以及帶給我們的寓意</span>
+            </div>
+            <div class="magnifier-container">
+                <span class="magnifier-icon">🔍</span>
+                <div class="tooltip" style="display: none;">
+                    <img src="img/it05.jpg" alt="Preview Image4" class="tooltip-image4">
+                </div>
+            </div>
+            <div class="text-box03">
+                <span style="font-size: 20px;">FOODIE</span>
+            </div>
+            <div class="text-box-text03">
+                <span style="letter-spacing:2px">超級喜歡吃美食！！<br>
+                還會記綠下來自己吃的感想<br>
+                有點像是美食部落客的樣子就是了</span>
+            </div>
+            <div class="magnifier-container">
+                <span class="magnifier-icon">🔍</span>
+                <div class="tooltip" style="display: none;">
+                    <img src="img/it03.jpg" alt="Preview Image5" class="tooltip-image5">
+                </div>
+            </div>
+            <div class="gif-container">
+                <div class="tenor-gif-embed" data-postid="2724505493463639324" data-share-method="host" data-aspect-ratio="1.60645" data-width="100%"><a href="https://tenor.com/view/chipi-chipi-chapa-chapa-cat-gif-2724505493463639324">Chipi Chipi Chapa Chapa GIF</a>from <a href="https://tenor.com/search/chipi+chipi-gifs">Chipi Chipi GIFs</a></div> 
+                <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+            </div>
+            <div class="button-container">
+            
+            <button class="button1" id="button1">嗨起來囉！！！</button>
+
+            <audio id="audio" src="img/chipi.mp3" preload="auto" volume="0.2"></audio>
             </div>
         </section>
 
@@ -55,7 +133,7 @@
             <a href="#interests" class="menu-button">興趣</a>   
         </div>
         
-        <section class="contact-box">
+        <section class="contact-box" id="about">
             <h2 style="letter-spacing: 4px; font-size: 36px; font-family: 微軟正黑體; text-indent: -300px; margin-top: 10px;">CONTENT</h2>
             <div class="phone-info">
             <img src="img/phone.png" alt="電話">
@@ -139,7 +217,7 @@
         </section>
 
     <section>
-        <div class="education-box">
+        <div class="education-box" id="education">
         <h2 style="letter-spacing: 4px; font-size: 36px; font-family: 微軟正黑體; text-indent: -300px; margin-top: 10px;">EDUCATION</h2>
         <section class="timeline-container">
             <div class="timeline">
@@ -170,7 +248,60 @@
 
     </section>
         
+    <section>
+        <div class="exp-box" id="experience">
+        <h2 style="letter-spacing: 4px; font-size: 36px; font-family: 微軟正黑體; text-indent: -300px; margin-top: 10px;">EXPERIENCE</h2>
+        <section class="timeline-container01">
+            <div class="timeline01">
+                <div class="exp-event" style="top: 0%;">
+                    <div class="exp-event-label">管理學</div>
+                </div>
+                <div class="exp-event" style="top: 33.33%;">
+                    <div class="exp-event-label">人力管理</div>
+                </div>
+                <div class="exp-event" style="top: 66.67%;">
+                    <div class="exp-event-label">網路程式</div>
+                </div>
+                <div class="exp-event" style="top: calc(100% - 20px);">
+                    <div class="exp-event-label">多媒體</div>
+                </div>
+            </div>
+        </section>
+        <div class="exp-text-box" id="exp-text-box">
+            <p id="exp-text">請點擊右側按鈕查看資訊</p>
+          </div>
+          <div class="exp-js-box" id="exp-js-box" style="display: none;">
+          </div>
+        
+          <div class="exp-img-box" id="exp-img-box">
+            <!-- Placeholder for education image -->
+            <img id="exp-img" src="" alt="">
+          </div>
+
+    </section>
+    
+   <section>
+    <div class="carousel">
+        <img class="carousel-item active" src="img/me05.jpg" alt="Image 1">
+        <img class="carousel-item" src="img/me06.jpg" alt="Image 2">
+        <img class="carousel-item" src="img/me07.jpg" alt="Image 3">
+        <!-- 更多图片... -->
+        <button class="carousel-control prev">《</button>
+        <button class="carousel-control next">》</button>
+      </div>
+      <div class="carousel-indicators">
+        <div class="indicator" data-index="11111"></div>
+        <div class="indicator" data-index="11112"></div>
+        <div class="indicator" data-index="11113"></div>
     </div>
+   </section>
+    
+   
+    </div>
+    <script src="main8.js"></script>
+    <script src="main7.js"></script>
+    <script src="main6.js"></script>
+    <script src="main5.js"></script>
     <script src="main4.js"></script>
     <script src="main3.js"></script>
     <script src="main2.js"></script>
